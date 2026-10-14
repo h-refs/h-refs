@@ -2,8 +2,8 @@
 
 Marketing professional. I write about media, marketing and the internet.
 
-- **Blog:** [h-refs.github.io](https://h-refs.github.io)
-- **Resume:** _link goes here once updated_
+- **Blog:** [Hari's Reflections](https://h-refs.github.io)
+- **Resume:** [h-refs.github.io/resume](https://h-refs.github.io/resume/)
 
 ## About me
 
