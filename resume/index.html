@@ -29,7 +29,8 @@
     color:var(--red); border-bottom:1px solid #333; padding-bottom:8px; margin-bottom:16px;
   }
   .entry{margin-bottom:24px;}
-  .entry-head{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px;}
+  .entry-head{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px; position:relative; padding-right:150px;}
+  .entry-head .when{position:absolute; right:0; top:2px; text-align:right;}
   .entry-head .company{color:var(--red); font-weight:700; font-size:1.12rem; width:100%;}
   .entry-head .role{font-weight:700; font-size:1rem;}
   .entry-head .when{color:var(--mid); font-size:.8rem; letter-spacing:.05em; text-transform:uppercase;}
@@ -164,6 +165,7 @@
     </div>
     <div class="edu-item">
       <div class="logo">
+        <img src="assets/vit.png" alt="Vellore Institute of Technology">
         <div class="glname">Vellore<br>Institute of Technology<span>Vellore</span></div>
       </div>
       <div class="detail">B.Tech — Electronics and Instrumentation Engineering<br>
