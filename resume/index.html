@@ -29,8 +29,11 @@
     color:var(--red); border-bottom:1px solid #333; padding-bottom:8px; margin-bottom:16px;
   }
   .entry{margin-bottom:24px;}
-  .entry-head{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px; position:relative; padding-right:150px;}
-  .entry-head .when{position:absolute; right:0; top:2px; text-align:right;}
+  .entry-head{display:grid; grid-template-columns:1fr auto; grid-template-rows:auto auto; column-gap:24px; align-items:baseline;}
+  .entry-head .company{grid-column:1; grid-row:1;}
+  .entry-head .role{grid-column:1; grid-row:2;}
+  .entry-head .when{grid-column:2; grid-row:1; color:var(--dark); font-weight:700; text-transform:uppercase; font-size:.88rem; letter-spacing:.04em; text-align:right;}
+  .entry-head .loc{grid-column:2; grid-row:2; color:var(--cream); font-weight:700; font-size:.92rem; text-align:right;}
   .entry-head .company{color:var(--red); font-weight:700; font-size:1.12rem; width:100%;}
   .entry-head .role{font-weight:700; font-size:1rem;}
   .entry-head .when{color:var(--mid); font-size:.8rem; letter-spacing:.05em; text-transform:uppercase;}
@@ -92,10 +95,11 @@
 
     <div class="entry">
       <div class="entry-head">
-        <span class="company">Deloitte · Hyderabad</span>
-        <span class="when">Sep 2025 – Present</span>
+        <span class="company">Deloitte</span>
+        <span class="when">September 2025 – Present</span>
+        <span class="role">Market Research &amp; Insights Associate</span>
+        <span class="loc">Hyderabad</span>
       </div>
-      <div class="entry-head"><span class="role">Market Research &amp; Insights Associate</span></div>
       <ul>
         <li><strong>AI-enabled research automation</strong> — build AI and prompt-engineering workflows that automate recurring competitive-intelligence newsletters for 2 flagship trackers (daily/weekly cadence), cutting production time and raising information capture by 40%+.</li>
         <li><strong>Industry analysis</strong> — analyze full industry landscapes and deliver five-year outlooks grounded in current trends and policy shifts; present industry position and upcoming inflection points to client stakeholders.</li>
@@ -106,10 +110,11 @@
 
     <div class="entry">
       <div class="entry-head">
-        <span class="company">Coforge Ltd · Greater Noida</span>
-        <span class="when">Oct 2024 – Aug 2025</span>
+        <span class="company">Coforge Ltd</span>
+        <span class="when">October 2024 – August 2025</span>
+        <span class="role">Management Trainee (PMO)</span>
+        <span class="loc">Greater Noida</span>
       </div>
-      <div class="entry-head"><span class="role">Management Trainee (PMO)</span></div>
       <ul>
         <li><strong>Delivery optimization &amp; pricing support</strong> — analyzed cost structures, resource allocation and pricing to support competitive service-contract positioning, contributing to gross-margin stability.</li>
         <li><strong>Requirement forecasting</strong> — built Python-based models (GitHub CoPilot) that predicted client staffing needs by skill stack from historical hiring data, cutting time-to-hire ~10% via preemptive onboarding.</li>
@@ -121,10 +126,11 @@
 
     <div class="entry">
       <div class="entry-head">
-        <span class="company">YASH Technologies · Hyderabad</span>
-        <span class="when">Apr 2023 – May 2023</span>
+        <span class="company">YASH Technologies</span>
+        <span class="when">April 2023 – May 2023</span>
+        <span class="role">Summer Intern</span>
+        <span class="loc">Hyderabad</span>
       </div>
-      <div class="entry-head"><span class="role">Summer Intern</span></div>
       <ul>
         <li><strong>Industry value-chain analysis</strong> — mapped the US hospital industry's patient value chain and key stakeholders through secondary research.</li>
         <li><strong>Market segmentation &amp; competitive intelligence</strong> — built a patient journey map with visit-purpose segments; benchmarked competitors on services, pricing and cost-efficiency models.</li>
